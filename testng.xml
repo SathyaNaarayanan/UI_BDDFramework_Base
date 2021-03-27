@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- 
+	For parallel execution use below method inside suite
+	<suite name="BDDBase" data-provider-thread-count="2">
+ -->
+
+<suite name="BDDBase">
+
+<listeners>
+<listener class-name="Listeners.ITestListenersImplementation"></listener>
+</listeners>
+
+  <test name="UIAutomation">
+    <classes>
+      <class name="TestRunner.TestRunner"/>
+    </classes>
+  </test> <!-- UIAutomation -->
+</suite> <!-- BDDBase -->
